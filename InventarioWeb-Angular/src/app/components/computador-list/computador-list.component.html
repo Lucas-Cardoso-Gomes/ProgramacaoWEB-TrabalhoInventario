@@ -1,0 +1,29 @@
+<h2>Inventário de Computadores</h2>
+<button (click)="novo()">Novo</button>
+<table border="1" width="100%">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Usuário</th>
+      <th>Processador</th>
+      <th>SO</th>
+      <th>RAM (GB)</th>
+      <th>Data Cadastro</th>
+      <th>Ações</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of computadores">
+      <td>{{ c.id }}</td>
+      <td>{{ c.usuario }}</td>
+      <td>{{ c.processador }}</td>
+      <td>{{ c.sistemaOperacional }}</td>
+      <td>{{ c.ram }}</td>
+      <td>{{ c.dataCadastro }}</td>
+      <td>
+        <button (click)="editar(c.id!)">Editar</button>
+        <button (click)="excluir(c.id!)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

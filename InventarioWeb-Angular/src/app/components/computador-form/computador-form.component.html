@@ -1,0 +1,23 @@
+<h2>{{ isEdit ? 'Editar' : 'Novo' }} Computador</h2>
+
+<form [formGroup]="form" (ngSubmit)="salvar()" class="form-container">
+  <label>Usuário:</label>
+  <input formControlName="usuario" required />
+
+  <label>Processador:</label>
+  <input formControlName="processador" />
+
+  <label>Sistema Operacional:</label>
+  <input formControlName="sistemaOperacional" />
+
+  <label>RAM (GB):</label>
+  <input type="number" formControlName="ram" />
+
+  <label>Data Cadastro:</label>
+  <input type="date" formControlName="dataCadastro" />
+
+  <div class="button-group">
+    <button type="submit" [disabled]="form.invalid">Salvar</button>
+    <button type="button" (click)="cancelar()">Cancelar</button>
+  </div>
+</form>
