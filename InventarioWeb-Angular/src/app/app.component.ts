@@ -9,5 +9,4 @@ import { RouterModule } from '@angular/router';
 })
 export class AppComponent {
   title = 'Nada'
-  //(title: any) {throw new Error('ethod not imMplemented.')};
 }

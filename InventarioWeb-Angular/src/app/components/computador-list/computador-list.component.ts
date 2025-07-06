@@ -1,4 +1,3 @@
-// src/app/components/computador-list/computador-list.component.ts
 import { Component, OnInit } from '@angular/core';
 import { Computador, ComputadorService } from '../../services/computador.service';
 import { Router, RouterModule } from '@angular/router';
@@ -47,7 +46,7 @@ excluir(id: number): void {
   }).then(result => {
     if (result.isConfirmed) {
       this.service.excluir(id).subscribe(() => {
-        this.ngOnInit(); // atualiza a lista
+        this.ngOnInit();
         Swal.fire('Excluído!', 'O registro foi removido.', 'success');
       });
     }

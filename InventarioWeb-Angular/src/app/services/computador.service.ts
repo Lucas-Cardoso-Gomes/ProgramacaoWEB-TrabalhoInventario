@@ -8,7 +8,7 @@ export interface Computador {
   processador: string;
   sistemaOperacional: string;
   ram: number;
-  dataCadastro: string; //yyyy-MM-dd
+  dataCadastro: string; //yyyy-MM-dd - ajustado no html
 }
 
 @Injectable({
