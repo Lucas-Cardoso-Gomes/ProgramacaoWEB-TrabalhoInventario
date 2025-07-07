@@ -31,8 +31,8 @@ export class ComputadorFormComponent implements OnInit {
   ngOnInit(): void {
     this.form = this.fb.group({
       usuario: ['', [Validators.required]],
-      processador: [''],
-      sistemaOperacional: [''],
+      processador: ['', [Validators.required]],
+      sistemaOperacional: ['',[Validators.required]],
       ram: [1, [Validators.required, Validators.min(1)]],
       dataCadastro: ['', Validators.required]
     });

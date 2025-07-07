@@ -36,7 +36,7 @@ export class ComputadorService {
     return this.http.put<Computador>(`${this.apiUrl}/${id}`, computador);
   }
 
-  excluir(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  excluir(id: number) {
+    return this.http.delete(`${this.apiUrl}/${id}`);
   }
 }
