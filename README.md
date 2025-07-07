@@ -20,3 +20,5 @@ Este é um projeto escolar cujo objetivo é fornecer um serviço para o cadastro
 * **Spring Data JPA**: Para a persistência de dados de forma simplificada.
 * **Maven**: Gerenciador de dependências e build do projeto.
 * **PostgreSQL**: Banco de dados relacional utilizado para armazenar os dados do inventário.
+
+ShadoW
