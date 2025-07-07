@@ -1,4 +1,4 @@
-# InventárioWeb-API
+## InventárioWeb-API
 
 API RESTful desenvolvida em Java com Spring Boot para o projeto de um sistema de inventário de computadores. Este projeto serve como o back-end para a aplicação [InventarioWeb-Angular](https://github.com/seu-usuario/seu-repositorio/tree/main/InventarioWeb-Angular).
 
@@ -17,7 +17,6 @@ Este é um projeto escolar cujo objetivo é fornecer um serviço para o cadastro
 
 * **Java 21**: Versão mais recente do Java, utilizada para o desenvolvimento da API.
 * **Spring Boot**: Framework para a criação de aplicações Java de forma rápida e configurável.
-* **Spring Data JPA**: Para a persistência de dados de forma simplificada.
 * **Maven**: Gerenciador de dependências e build do projeto.
 * **PostgreSQL**: Banco de dados relacional utilizado para armazenar os dados do inventário.
 
